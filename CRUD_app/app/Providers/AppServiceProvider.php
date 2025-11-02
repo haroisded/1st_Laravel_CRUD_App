@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\URL;
-use App\View\Components\data_output;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +13,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-       // URL::forceScheme(scheme:'https'); <-- Only Enable, when in production mode
+      // Only Enable, when in production mode
+      // URL::forceScheme(scheme:'https');
     }
 
     /**
@@ -21,6 +22,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-       //Blade::component('data-output', data_output::class);
+
     }
 }
