@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class users_table extends Model
 {
-  public $incrementing = false;
   protected $table = 'users_tables';
+  public $incrementing = false;
 
   protected $fillable = ['id', 'Name', 'Age', 'Gender'];
   protected $guarded = ['created_at', 'updated_at'];
@@ -16,7 +16,7 @@ class users_table extends Model
     'id' => 'integer',
     'Name' => 'string',
     'Age' => 'integer',
-    'Gender' => 'integer'
+    'Gender' => 'string'
   ];
 }
 
