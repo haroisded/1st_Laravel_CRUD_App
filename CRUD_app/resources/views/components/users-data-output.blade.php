@@ -1,5 +1,3 @@
-@props(['users' => collect([])])
-
 @if($users->isEmpty())
     <!-- Default Table Row -->
     <tr class="border-b border-gray-700 hover:bg-blue-900/40 transition">
